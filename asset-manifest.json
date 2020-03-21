@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/coronavirus_mexico/static/js/main.82d8c432.chunk.js",
-    "main.js.map": "/coronavirus_mexico/static/js/main.82d8c432.chunk.js.map",
-    "runtime-main.js": "/coronavirus_mexico/static/js/runtime-main.407a7095.js",
-    "runtime-main.js.map": "/coronavirus_mexico/static/js/runtime-main.407a7095.js.map",
-    "static/js/2.3bb47017.chunk.js": "/coronavirus_mexico/static/js/2.3bb47017.chunk.js",
-    "static/js/2.3bb47017.chunk.js.map": "/coronavirus_mexico/static/js/2.3bb47017.chunk.js.map",
-    "index.html": "/coronavirus_mexico/index.html",
-    "precache-manifest.89e9fd26e8cc1c6d40e564b14ad2189a.js": "/coronavirus_mexico/precache-manifest.89e9fd26e8cc1c6d40e564b14ad2189a.js",
-    "service-worker.js": "/coronavirus_mexico/service-worker.js",
-    "static/js/2.3bb47017.chunk.js.LICENSE.txt": "/coronavirus_mexico/static/js/2.3bb47017.chunk.js.LICENSE.txt"
+    "main.js": "/covid19mexico.org/static/js/main.82d8c432.chunk.js",
+    "main.js.map": "/covid19mexico.org/static/js/main.82d8c432.chunk.js.map",
+    "runtime-main.js": "/covid19mexico.org/static/js/runtime-main.4e76b9be.js",
+    "runtime-main.js.map": "/covid19mexico.org/static/js/runtime-main.4e76b9be.js.map",
+    "static/js/2.dc7f5ec0.chunk.js": "/covid19mexico.org/static/js/2.dc7f5ec0.chunk.js",
+    "static/js/2.dc7f5ec0.chunk.js.map": "/covid19mexico.org/static/js/2.dc7f5ec0.chunk.js.map",
+    "index.html": "/covid19mexico.org/index.html",
+    "precache-manifest.1076c2c2302b57354425e1d263c8cfda.js": "/covid19mexico.org/precache-manifest.1076c2c2302b57354425e1d263c8cfda.js",
+    "service-worker.js": "/covid19mexico.org/service-worker.js",
+    "static/js/2.dc7f5ec0.chunk.js.LICENSE.txt": "/covid19mexico.org/static/js/2.dc7f5ec0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.407a7095.js",
-    "static/js/2.3bb47017.chunk.js",
+    "static/js/runtime-main.4e76b9be.js",
+    "static/js/2.dc7f5ec0.chunk.js",
     "static/js/main.82d8c432.chunk.js"
   ]
 }
