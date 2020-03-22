@@ -1,6 +1,5 @@
 {
   "name": "covid-mexico",
-  "homepage": "http://pepemanboy.github.io/coronavirus_mexico",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
