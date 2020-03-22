@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Papa from 'papaparse'
 import {Line} from 'react-chartjs-2';
+import Container from 'react-bootstrap/Container'
+import './App.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const start_date = new Date("2/26/2020");
@@ -75,7 +79,14 @@ function App() {
 
   return (
     <div className="App">
-      <Line data={plotData}/>
+      <Container>
+        <h1 className="title">Coronavirus en México</h1>
+        <Line data={plotData}/>
+        <div className="footer">
+          <p>Actualizado automáticamente cada 24 horas gracias a <a href="https://coronavirus.jhu.edu/">Johns Hopkins University Coronavirus Resource Center</a>.</p>
+          <p>Conoce más en <a href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
+        </div>
+      </Container>
     </div>
   );
 }
