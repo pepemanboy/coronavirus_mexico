@@ -3,6 +3,7 @@ import Papa from 'papaparse'
 import {Line} from 'react-chartjs-2';
 
 function App() {
+  const start_date = new Date("2/26/2020");
 
   const confirmed_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
   const deaths_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv";
@@ -26,6 +27,7 @@ function App() {
     for (const key in mexico) {
       if (key.match(/\d*\/\d*\/\d*/ig)) {
         const date = new Date(key);
+        if (date < start_date) continue;
         const date_str = date.getDate() + "/" +  (date.getMonth() + 1);
         mexico_data.labels.push(date_str);
         mexico_data.data.push(parseInt(mexico[key]));
