@@ -84,7 +84,7 @@ function App() {
         <Line data={plotData}/>
         <div className="footer">
           <p>Actualizado automáticamente cada 24 horas gracias a <a href="https://coronavirus.jhu.edu/">Johns Hopkins University Coronavirus Resource Center</a>.</p>
-          <p>Conoce más en <a href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
+          <p>Open source. Conoce más en <a target="_blank" href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
         </div>
       </Container>
     </div>
