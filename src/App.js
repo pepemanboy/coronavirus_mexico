@@ -13,12 +13,9 @@ function App() {
   const deaths_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv";
   const recovered_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv";
 
-  const [error, setError] = useState("Ok");
-
-  const [series, setSeries] = useState({labels:[], series:[]});
   const [plotData, setPlotData] = useState({labels:[], datasets: []});
 
-  async function getData(url) {
+  const getData = async (url) => {
     const response = await fetch(url);
     const reader = response.body.getReader();
     const result = await reader.read();
@@ -40,7 +37,7 @@ function App() {
     return mexico_data;
   }
 
-  async function getAllData() {
+  const getAllData = async () => {
     const confirmed_data = await getData(confirmed_url);
     const deaths_data = await getData(deaths_url);
     const recovered_data = await getData(recovered_url);
@@ -75,7 +72,7 @@ function App() {
 
   useEffect(()=> {
     getAllData();
-  }, []);
+  });
 
   return (
     <div className="App">
@@ -84,7 +81,7 @@ function App() {
         <Line data={plotData}/>
         <div className="footer">
           <p>Actualizado automáticamente cada 24 horas gracias a <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University Coronavirus Resource Center</a>.</p>
-          <p>Open source. Conoce más en <a target="_blank" href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
+          <p>Open source. Conoce más en <a target="_blank" rel="noopener noreferrer" href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
         </div>
       </Container>
     </div>
