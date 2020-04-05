@@ -83,7 +83,7 @@ function App() {
         <h1 className="title">Coronavirus en México</h1>
         <Line data={plotData}/>
         <div className="footer">
-          <p>Actualizado automáticamente cada 24 horas gracias a <a href="https://coronavirus.jhu.edu/">Johns Hopkins University Coronavirus Resource Center</a>.</p>
+          <p>Actualizado automáticamente cada 24 horas gracias a <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University Coronavirus Resource Center</a>.</p>
           <p>Open source. Conoce más en <a target="_blank" href="https://github.com/pepemanboy/coronavirus_mexico/tree/master">Github</a>.</p>
         </div>
       </Container>
