@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const start_date = new Date("2/26/2020");
 
-  const confirmed_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
-  const deaths_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv";
-  const recovered_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv";
+  const confirmed_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+  const deaths_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv";
+  const recovered_url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv";
 
   const [error, setError] = useState("Ok");
 
@@ -53,19 +53,19 @@ function App() {
         {
           label: 'Casos confirmados',
           fill: false,
-          borderColor: '#17579B',
+          borderColor: '#48BEFF',
           data: confirmed_data.data,
         },
         {
           label: 'Recuperados',
           fill: false,
-          borderColor: '#67A3D2',
+          borderColor: '#43C59E',
           data: recovered_data.data,
         },
         {
           label: 'Muertes',
           fill: false,
-          borderColor: '#363537',
+          borderColor: '#14453D',
           data: deaths_data.data,
         },
       ]
